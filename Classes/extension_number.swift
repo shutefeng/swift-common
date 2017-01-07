@@ -7,13 +7,27 @@
 //
 
 import Foundation
+import UIKit
 
 extension Int {
     
-    static func eRandom() -> Int { return Int(arc4random()) }
+    static func e_Random() -> Int { return Int(arc4random()) }
     
-    static func eRandom(min: Int, max: Int) -> Int {
+    static func e_Random(min: Int, max: Int) -> Int {
         let range = Range(uncheckedBounds: (min, max))
         return Int(arc4random_uniform(UInt32(range.upperBound - range.lowerBound))) + range.lowerBound
+    }
+    
+    func e_CGFloat() -> CGFloat {
+        
+        return CGFloat(self)
+    }
+}
+
+extension CGFloat {
+    
+    func e_Int() -> Int {
+        
+        return Int(self)
     }
 }
