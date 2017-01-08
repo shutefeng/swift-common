@@ -10,7 +10,7 @@ import Foundation
 
 extension UIViewController {
     
-    func e_StartAnimation() -> Void {
+    public func e_StartAnimation() -> Void {
         
         /// 需要在LaunchScreen.storyboard 中 设置Storyboard ID
         let viewController = UIStoryboard.init(name: "LaunchScreen", bundle: nil).instantiateViewController(withIdentifier: "LaunchScreen")

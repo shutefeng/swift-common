@@ -18,7 +18,7 @@ extension Int {
         return Int(arc4random_uniform(UInt32(range.upperBound - range.lowerBound))) + range.lowerBound
     }
     
-    func e_CGFloat() -> CGFloat {
+    public func e_CGFloat() -> CGFloat {
         
         return CGFloat(self)
     }
@@ -26,7 +26,7 @@ extension Int {
 
 extension CGFloat {
     
-    func e_Int() -> Int {
+    public func e_Int() -> Int {
         
         return Int(self)
     }

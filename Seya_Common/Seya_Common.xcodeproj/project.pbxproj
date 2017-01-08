@@ -8,14 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		71603CBF1E21397800DB2C36 /* Seya_Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 71603CBD1E21397800DB2C36 /* Seya_Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71603CC71E21398900DB2C36 /* extension_Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71603CC61E21398900DB2C36 /* extension_Int.swift */; };
+		71603CCD1E213B2800DB2C36 /* extension_navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71603CC91E213B2800DB2C36 /* extension_navigation.swift */; };
+		71603CCE1E213B2800DB2C36 /* extension_number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71603CCA1E213B2800DB2C36 /* extension_number.swift */; };
+		71603CCF1E213B2800DB2C36 /* extension_print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71603CCB1E213B2800DB2C36 /* extension_print.swift */; };
+		71603CD01E213B2800DB2C36 /* extension_startAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71603CCC1E213B2800DB2C36 /* extension_startAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71603CBA1E21397800DB2C36 /* Seya_Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Seya_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71603CBD1E21397800DB2C36 /* Seya_Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Seya_Common.h; sourceTree = "<group>"; };
 		71603CBE1E21397800DB2C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71603CC61E21398900DB2C36 /* extension_Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension_Int.swift; sourceTree = "<group>"; };
+		71603CC91E213B2800DB2C36 /* extension_navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension_navigation.swift; sourceTree = "<group>"; };
+		71603CCA1E213B2800DB2C36 /* extension_number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension_number.swift; sourceTree = "<group>"; };
+		71603CCB1E213B2800DB2C36 /* extension_print.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension_print.swift; sourceTree = "<group>"; };
+		71603CCC1E213B2800DB2C36 /* extension_startAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension_startAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,17 +54,20 @@
 		71603CBC1E21397800DB2C36 /* Seya_Common */ = {
 			isa = PBXGroup;
 			children = (
-				71603CC51E21398900DB2C36 /* Classes */,
+				71603CC81E213B2800DB2C36 /* Classes */,
 				71603CBD1E21397800DB2C36 /* Seya_Common.h */,
 				71603CBE1E21397800DB2C36 /* Info.plist */,
 			);
 			path = Seya_Common;
 			sourceTree = "<group>";
 		};
-		71603CC51E21398900DB2C36 /* Classes */ = {
+		71603CC81E213B2800DB2C36 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				71603CC61E21398900DB2C36 /* extension_Int.swift */,
+				71603CC91E213B2800DB2C36 /* extension_navigation.swift */,
+				71603CCA1E213B2800DB2C36 /* extension_number.swift */,
+				71603CCB1E213B2800DB2C36 /* extension_print.swift */,
+				71603CCC1E213B2800DB2C36 /* extension_startAnimation.swift */,
 			);
 			name = Classes;
 			path = ../../Classes;
@@ -143,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71603CC71E21398900DB2C36 /* extension_Int.swift in Sources */,
+				71603CCE1E213B2800DB2C36 /* extension_number.swift in Sources */,
+				71603CCD1E213B2800DB2C36 /* extension_navigation.swift in Sources */,
+				71603CCF1E213B2800DB2C36 /* extension_print.swift in Sources */,
+				71603CD01E213B2800DB2C36 /* extension_startAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +271,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Seya_Common/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.196159353.Seya-Common";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +290,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Seya_Common/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.196159353.Seya-Common";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +318,7 @@
 				71603CC41E21397800DB2C36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
