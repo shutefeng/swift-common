@@ -7,11 +7,9 @@
 //
 
 import Foundation
-import UIKit
-
 
 public protocol UINavigationAnimationInterface: NSObjectProtocol {
-    
+
     func iNavigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning?
 }
 
